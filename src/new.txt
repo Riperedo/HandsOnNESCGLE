@@ -1,3 +1,0 @@
-# Hands-On NE-SCLE
-
-This is the set of files that makes the present repository work.
