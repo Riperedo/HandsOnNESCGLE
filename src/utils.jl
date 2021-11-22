@@ -3,7 +3,7 @@
 #########################################
 using DelimitedFiles
 using LinearAlgebra
-using SpecialFunctions #https://juliamath.github.io/SpecialFunctions.jl/latest/
+#using SpecialFunctions #https://juliamath.github.io/SpecialFunctions.jl/latest/
 
 #################################################
 # We define a abstract type "objet". It's 		#
@@ -77,11 +77,11 @@ function biseccion(condicion :: Function, A :: Real, T :: Real, tolerancia :: Re
 end
 
 function sphericalbesselj(nu, x::T) where {T}
-    besselj_nuhalf_x = besselj(nu + one(nu)/2, x)
-    if abs(x) ≤ sqrt(eps(real(zero(besselj_nuhalf_x))))
-        nu == 0 ? one(besselj_nuhalf_x) : zero(besselj_nuhalf_x)
-    else
-        √((float(T))(π)/2x) * besselj_nuhalf_x
-    end
+    #besselj_nuhalf_x = besselj(nu + one(nu)/2, x)
+    #if abs(x) ≤ sqrt(eps(real(zero(besselj_nuhalf_x))))
+    #    nu == 0 ? one(besselj_nuhalf_x) : zero(besselj_nuhalf_x)
+    #else
+    #    √((float(T))(π)/2x) * besselj_nuhalf_x
+    #end
+    return () = 0.0
 end
-
